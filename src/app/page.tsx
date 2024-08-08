@@ -15,14 +15,14 @@ export default function Home() {
   };
 
   return (
-   <div>
-    <div>
+   <div className="text-center mt-5">
+    <div className="p-4">
       <h1>enter your name</h1>
     </div>
     <form onSubmit={handleSubmit}>
       <input type="text"  className="text-black" value={inputVal}
       placeholder="type your name.." onChange={(e) => setInputVal(e.target.value)} />
-      <button type="submit" >Predic Data</button>
+      <button type="submit" >Predict Data</button>
     </form>
    </div>
   );
